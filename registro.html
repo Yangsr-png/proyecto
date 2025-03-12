@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagenes/Logo.png" class="logo">
+            <h1>EMT Madrid</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <label for="menu-toggle" class="menu-toggle">☰</label>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Portada</a></li>
+                <li><a href="documentacion.html">Documentación</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="aviso-legal.html">Aviso Legal</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container positionRelative">
+            <div class="formulario-container">
+                <form id="registerForm" action="http://www.cursos-diseno.es/mostrar.php" method="POST">
+                    <div class="background">
+                        <div class="nombre-container">
+                            <p class="textoFormulario">Nombre y apellidos</p>
+                            <input type="text" name="nombre" required class="nombre-input">
+                        </div>
+                        <div class="edad-container">
+                            <p class="textoFormulario">Edad</p>
+                            <input type="number" name="Edad" required class="edad-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="textoFormulario">Email</p>
+                        <input type="email" name="email" required class="anchototal">
+                    </div>
+                    <div class="form-group">
+                        <p class="textoFormulario">Telefono</p>
+                        <input type="tel" name="telefono" required class="anchototal">
+                    </div>
+                    <div class="form-group">
+                        <p class="textoFormulario">NIF</p>
+                        <input type="text" name="nif" required class="anchototal">
+                    </div>
+                    <div class="form-group">
+                        <p class="textoFormulario">Dirección</p>
+                        <input type="text" name="Direccion" required class="anchototal">
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones" class="condiciones">Acepto los términos y condiciones</label>
+                    </div>
+                    <input type="submit" class="derecha" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EMT Madrid App</p>
+            <div class="social-links">
+                <a href="https://www.emtmadrid.es/" target="_blank">Web EMT Madrid</a>
+                <a href="https://www.facebook.com/EMTMadrid/" target="_blank">Facebook</a>
+                <a href="https://x.com/emtmadrid" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/emtmadrid/#" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
